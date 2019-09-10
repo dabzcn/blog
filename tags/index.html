@@ -7,12 +7,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>大笨钟的博客</title>
+<title>Etiquetas - 大笨钟的博客</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="大笨钟的博客">
-<meta property="og:url" content="https://daben.org/index.html">
+<meta property="og:url" content="https://daben.org/tags/index.html">
 <meta property="og:site_name" content="大笨钟的博客">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://daben.org/images/og_image.png">
@@ -96,7 +96,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/">Home</a>
                 
                 <a class="navbar-item"
@@ -105,7 +105,7 @@
                 <a class="navbar-item"
                 href="/categories">Categories</a>
                 
-                <a class="navbar-item"
+                <a class="navbar-item is-active"
                 href="/tags">Tags</a>
                 
                 <a class="navbar-item"
@@ -138,269 +138,18 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-10T14:25:40.000Z">2019-09-10</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 分钟 read (About 637 words)
-                </span>
-                
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Etiquetas
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
                 
             </div>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/10/ssr4in1/">Shadowsocks 一键安装脚本（四合一）版本</a>
-            
-        </h1>
-        <div class="content">
-            <p>适用环境</p>
-<p>系统支持：CentOS 6+，Debian 7+，Ubuntu 12+<br>内存要求：≥128M<br>日期　　：2018 年 06 月 01 日</p>
-<p>关于脚本</p>
-<p>1、一键安装 Shadowsocks-Python， ShadowsocksR， Shadowsocks-Go， Shadowsocks-libev 版（四选一）服务端；<br>2、各版本的启动脚本及配置文件名不再重合；<br>3、每次运行可安装一种版本；<br>4、支持以多次运行来安装多个版本，且各个版本可以共存（注意端口号需设成不同）；<br>5、若已安装多个版本，则卸载时也需多次运行（每次卸载一种）；</p>
-<p>默认配置</p>
-<p>服务器端口：自己设定（如不设定，默认从 9000-19999 之间随机生成）<br>密码：自己设定（如不设定，默认为 teddysun.com）<br>加密方式：自己设定（如不设定，Python 和 libev 版默认为 aes-256-gcm，R 和 Go 版默认为 aes-256-cfb）<br>协议（protocol）：自己设定（如不设定，默认为 origin）（仅限 ShadowsocksR 版）<br>混淆（obfs）：自己设定（如不设定，默认为 plain）（仅限 ShadowsocksR 版）<br>备注：脚本默认创建单用户配置文件，如需配置多用户，请手动修改相应的配置文件后重启即可。</p>
-<p>客户端下载</p>
-<p>Shadowsocks Windows 客户端<br><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p>
-<p>ShadowsocksR Windows 客户端<br><a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases" target="_blank" rel="noopener">https://github.com/shadowsocksrr/shadowsocksr-csharp/releases</a></p>
-<p>使用方法</p>
-<p>使用root用户登录，运行以下命令：</p>
-<p>wget –no-check-certificate -O shadowsocks-all.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a><br>chmod +x shadowsocks-all.sh<br>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log<br>安装完成后，脚本提示如下:</p>
-<p>Congratulations, your_shadowsocks_version install completed!<br>Your Server IP :your_server_ip<br>Your Server Port :your_server_port<br>Your Password :your_password<br>Your Encryption Method:your_encryption_method<br>…</p>
-<p>卸载方法</p>
-<p>若已安装多个版本，则卸载时也需多次运行（每次卸载一种）</p>
-<p>使用root用户登录，运行以下命令：</p>
-<p>./shadowsocks-all.sh uninstall<br>脚本控制</p>
-<p>脚本后面的参数含义：启动，停止，重启，查看状态。</p>
-<p>Shadowsocks-Python 版：<br>/etc/init.d/shadowsocks-python start | stop | restart | status</p>
-<p>ShadowsocksR 版：<br>/etc/init.d/shadowsocks-r start | stop | restart | status</p>
-<p>Shadowsocks-Go 版：<br>/etc/init.d/shadowsocks-go start | stop | restart | status</p>
-<p>Shadowsocks-libev 版：<br>/etc/init.d/shadowsocks-libev start | stop | restart | status</p>
-<p>默认配置文件</p>
-<p>Shadowsocks-Python 版：<br>/etc/shadowsocks-python/config.json</p>
-<p>ShadowsocksR 版：<br>/etc/shadowsocks-r/config.json</p>
-<p>Shadowsocks-Go 版：<br>/etc/shadowsocks-go/config.json</p>
-<p>Shadowsocks-libev 版：<br>/etc/shadowsocks-libev/config.json</p>
-<p>参考链接：<a href="https://teddysun.com/486.html" target="_blank" rel="noopener">https://teddysun.com/486.html</a></p>
-
-        </div>
-        
-        
-        
     </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-10T14:10:34.000Z">2019-09-10</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 分钟 read (About 859 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/10/mynewpost/">ShadowsocksR 多用户一键安装 管理 脚本</a>
-            
-        </h1>
-        <div class="content">
-            <p>使用必读</p>
-<p>脚本的二维码图片链接，是调用doub.io自建的 二维码API 来生成二维码图片( <a href="http://doub.pw/qr/qr.php?text=xxx" target="_blank" rel="noopener">http://doub.pw/qr/qr.php?text=xxx</a> )。<br>当访问API页面后，PHP网页文件会把 GET参数( ?text=xxx ) 传递给JS脚本，浏览器会加载JS脚本，然后由JS脚本根据 GET参数的文本 生成二维码图片！图片是在你本地浏览器中生成，服务器中不存在图片！<br>如果你不信任本脚本请Ctrl+W关闭本页。</p>
-<p>系统要求</p>
-<p>CentOS 6+ 丨 Debian 6+ 丨 Ubuntu 14.04 +</p>
-<p>脚本特点</p>
-<p>所有步骤都可以通过 Shell 脚本中文交互 操作。</p>
-<p>支持 限制 用户速度<br>支持 限制 用户设备数<br>支持 限制 用户总流量<br>支持 定时 流量清零<br>支持 显示 当前连接IP<br>支持 显示 SS/SSR连接+二维码<br>支持 自定义账号IP或域名<br>支持 监控SSR服务端运行状态<br>支持 一键安装 BBR 锐速 LotServer<br>支持 一键封禁 垃圾邮件(SMAP)/BT/PT<br>脚本安装</p>
-<p>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh<br>输入 1 ，就会开始安装SSR服务端，按提示输入你需要的 端口/密码/加密方式/ 协议/混淆 等参数来添加第一个用户。<br>注意：用户名不支持中文.</p>
-<p>第一个用户添加完成后大概显示的信息:</p>
-<p>用户 [anlan.ga] 的配置信息：</p>
-<p> I P     : xxx.xxx.xxx.xxx<br> 端口     : 2333<br> 密码     : doub.io<br> 加密     : aes-128-ctr<br> 协议     : auth_aes128_md5<br> 混淆     : tls1.2_ticket_auth_compatible<br> 设备数限制: 5<br> 单线程限速: 1024 KB/S<br> 端口总限速: 4096 KB/S<br> 禁止的端口 : 无限制</p>
-<p> 已使用流量 : 上传: XXX KB + 下载: XXX MB = XXX MB<br> 剩余的流量 : 980 MB<br> 用户总流量 : 100 GB</p>
-<p> SS链接: ss://xxxxxxxxxxxxx<br> SS二维码: <a href="http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ss://xxxxxxxxxxxxx" target="_blank" rel="noopener">http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ss://xxxxxxxxxxxxx</a><br> SSR链接: ssr://xxxxxxxxxxxxx<br> SSR二维码: <a href="http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ssr://xxxxxxxxxxxxx" target="_blank" rel="noopener">http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ssr://xxxxxxxxxxxxx</a></p>
-<p> 提示:<br> 在浏览器中，打开二维码链接，就可以看到二维码图片。<br> 协议和混淆后面的[ _compatible ]，指的是 兼容原版协议/混淆。<br>使用说明</p>
-<p>#运行脚本<br>bash ssrmu.sh<br>脚本的大概操作菜单</p>
-<p>  ShadowsocksR MuJSON一键管理脚本 [v1.0.26]<br>  —- Toyo | doub.io/ss-jc60 —-</p>
-<ol>
-<li><p>安装 ShadowsocksR</p>
-</li>
-<li><p>更新 ShadowsocksR</p>
-</li>
-<li><p>卸载 ShadowsocksR</p>
-</li>
-<li><p>安装 libsodium(chacha20)<br>————————————</p>
-</li>
-<li><p>查看 账号信息</p>
-</li>
-<li><p>显示 连接信息</p>
-</li>
-<li><p>设置 用户配置</p>
-</li>
-<li><p>手动 修改配置</p>
-</li>
-<li><p>配置 流量清零<br>————————————</p>
-<ol start="10">
-<li>启动 ShadowsocksR</li>
-<li>停止 ShadowsocksR</li>
-<li>重启 ShadowsocksR</li>
-<li>查看 ShadowsocksR 日志<br>————————————</li>
-<li>其他功能</li>
-<li>升级脚本</li>
-</ol>
-<p>当前状态: 已安装 并 已启动</p>
-</li>
-</ol>
-<p>请输入数字 [1-15]：<br>文件位置</p>
-<p>安装目录：/usr/local/shadowsocksr</p>
-<p>配置文件：/usr/local/shadowsocksr/user-config.json</p>
-<p>数据文件：/usr/local/shadowsocksr/mudb.json</p>
-<p>脚本控制</p>
-<p>启动 ShadowsocksR：/etc/init.d/ssrmu start</p>
-<p>停止 ShadowsocksR：/etc/init.d/ssrmu stop</p>
-<p>重启 ShadowsocksR：/etc/init.d/ssrmu restart</p>
-<p>查看 ShadowsocksR状态：/etc/init.d/ssrmu status</p>
-<p>ShadowsocksR 默认支持UDP转发，服务端无需任何设置。</p>
-<p>其它</p>
-<p>CentOS7 如果不能使用可能是因为防火墙firewall问题</p>
-<p>#开放端口 比如你设置的SSR端口为1025<br>firewall-cmd –zone=public –add-port=1025/tcp –permanent<br>firewall-cmd –zone=public –add-port=1025/udp –permanent</p>
-<p>#重新载入<br>firewall-cmd –reload</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-10T08:17:10.000Z">2019-09-10</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    几秒 read (About 13 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/10/blog/">世界,你好!</a>
-            
-        </h1>
-        <div class="content">
-            <p>我的第一篇博文，测试一下。</p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-10T08:14:01.924Z">2019-09-10</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分钟 read (About 121 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/09/10/hello-world/">Hello World</a>
-            
-        </h1>
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-</div>
+</div></div>
                 
 
 
