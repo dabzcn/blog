@@ -18,7 +18,7 @@
 <meta property="og:description" content="使用必读 脚本的二维码图片链接，是调用doub.io自建的 二维码API 来生成二维码图片( http://doub.pw/qr/qr.php?text=xxx )。当访问API页面后，PHP网页文件会把 GET参数( ?text=xxx ) 传递给JS脚本，浏览器会加载JS脚本，然后由JS脚本根据 GET参数的文本 生成二维码图片！图片是在你本地浏览器中生成，服务器中不存在图片！如果你不信任本脚">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://daben.org/images/og_image.png">
-<meta property="og:updated_time" content="2019-09-10T14:23:13.414Z">
+<meta property="og:updated_time" content="2019-09-11T05:36:57.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ShadowsocksR 多用户一键安装 管理 脚本">
 <meta name="twitter:description" content="使用必读 脚本的二维码图片链接，是调用doub.io自建的 二维码API 来生成二维码图片( http://doub.pw/qr/qr.php?text=xxx )。当访问API页面后，PHP网页文件会把 GET参数( ?text=xxx ) 传递给JS脚本，浏览器会加载JS脚本，然后由JS脚本根据 GET参数的文本 生成二维码图片！图片是在你本地浏览器中生成，服务器中不存在图片！如果你不信任本脚">
@@ -113,6 +113,9 @@
                 href="/tags">标签</a>
                 
                 <a class="navbar-item"
+                href="http://imzh.net">摄影</a>
+                
+                <a class="navbar-item"
                 href="/about">关于</a>
                 
             </div>
@@ -121,7 +124,7 @@
                 
                     
                     
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/dabzh/blog">
                         
                         <i class="fab fa-github"></i>
                         
@@ -154,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分钟 读完 (大约 859 个字)
+                    6 分钟 读完 (大约 860 个字)
                 </span>
                 
                 
@@ -173,8 +176,7 @@
 <p>CentOS 6+ 丨 Debian 6+ 丨 Ubuntu 14.04 +</p>
 <p>脚本特点</p>
 <p>所有步骤都可以通过 Shell 脚本中文交互 操作。</p>
-<p>支持 限制 用户速度<br>支持 限制 用户设备数<br>支持 限制 用户总流量<br>支持 定时 流量清零<br>支持 显示 当前连接IP<br>支持 显示 SS/SSR连接+二维码<br>支持 自定义账号IP或域名<br>支持 监控SSR服务端运行状态<br>支持 一键安装 BBR 锐速 LotServer<br>支持 一键封禁 垃圾邮件(SMAP)/BT/PT<br>脚本安装</p>
-<p>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh<br>输入 1 ，就会开始安装SSR服务端，按提示输入你需要的 端口/密码/加密方式/ 协议/混淆 等参数来添加第一个用户。<br>注意：用户名不支持中文.</p>
+<p>支持 限制 用户速度<br>支持 限制 用户设备数<br>支持 限制 用户总流量<br>支持 定时 流量清零<br>支持 显示 当前连接IP<br>支持 显示 SS/SSR连接+二维码<br>支持 自定义账号IP或域名<br>支持 监控SSR服务端运行状态<br>支持 一键安装 BBR 锐速 LotServer<br>支持 一键封禁 垃圾邮件(SMAP)/BT/PT<br>脚本安装<br> <a id="more"></a><br>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh</a> &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh<br>输入 1 ，就会开始安装SSR服务端，按提示输入你需要的 端口/密码/加密方式/ 协议/混淆 等参数来添加第一个用户。<br>注意：用户名不支持中文.</p>
 <p>第一个用户添加完成后大概显示的信息:</p>
 <p>用户 [anlan.ga] 的配置信息：</p>
 <p> I P     : xxx.xxx.xxx.xxx<br> 端口     : 2333<br> 密码     : doub.io<br> 加密     : aes-128-ctr<br> 协议     : auth_aes128_md5<br> 混淆     : tls1.2_ticket_auth_compatible<br> 设备数限制: 5<br> 单线程限速: 1024 KB/S<br> 端口总限速: 4096 KB/S<br> 禁止的端口 : 无限制</p>
@@ -242,15 +244,23 @@
         <div class="buttons is-centered">
             
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Alipay. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.png" alt="支付宝"></div>
+</a>
 
                 
                 
-<div class="notification is-danger">
-    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
-</div>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/tenpay.png" alt="微信"></div>
+</a>
 
                 
                 <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
@@ -310,7 +320,7 @@
                 <div>
                     
                     <figure class="image is-128x128 has-mb-6">
-                        <img class=is-rounded src="/“/images/daben.jpg”" alt="大笨钟">
+                        <img class=is-rounded src="/images/daben.jpg" alt="大笨钟">
                     </figure>
                     
                     <p class="is-size-4 is-block">
@@ -364,7 +374,7 @@
             </div>
         </nav>
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://github.com/dabzh" target="_blank">
                 关注我</a>
         </div>
         
@@ -372,7 +382,7 @@
         <div class="level is-mobile">
             
             <a class="level-item button is-white is-marginless" target="_blank"
-                title="Github" href="https://github.com/ppoffice">
+                title="Github" href="https://github.com/dabzh">
                 
                 <i class="fab fa-github"></i>
                 
@@ -424,23 +434,23 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                <a class="level is-mobile" href="https://www.aliyun.com" target="_blank">
                     <span class="level-left">
-                        <span class="level-item">Hexo</span>
+                        <span class="level-item">阿里云</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">hexo.io</span>
+                        <span class="level-item tag">www.aliyun.com</span>
                     </span>
                 </a>
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                <a class="level is-mobile" href="https://cloud.tencent.com" target="_blank">
                     <span class="level-left">
-                        <span class="level-item">PPOffice</span>
+                        <span class="level-item">腾讯云</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">github.com</span>
+                        <span class="level-item tag">cloud.tencent.com</span>
                     </span>
                 </a>
             </li>
@@ -774,7 +784,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/dabzh/blog">
                         
                         <i class="fab fa-github"></i>
                         
